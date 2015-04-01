@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Zajecia1.Interfaces {
     interface IProblem {
-        public IState stan_poczatkowy();
-        public Boolean czy_cel(IState state);
-        public IEnumerable<IState> nastepniki(IState state);
+        IState initialState();
+        Boolean isTarget(IState state);
+        IEnumerable<IState> nextStates(IState state);
     }
 }

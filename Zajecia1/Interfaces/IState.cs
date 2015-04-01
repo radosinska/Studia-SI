@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Zajecia1.Interfaces {
     interface IState {
-        public IState getState();
+        IState getState();
     }
 }
